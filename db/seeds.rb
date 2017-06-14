@@ -17,6 +17,9 @@ posts = Post.all
     )
 end
 
+unique_post = Post.find_or_create_by!(title:"Fear and Loathing", body:"On the Campaign Trail")
+Comment.find_or_create_by!(post:unique_post, body:"This is a great book!")
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
