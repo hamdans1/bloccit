@@ -17,10 +17,13 @@
             </div>
         </div>
     </div>
+    <% @user.favorites.each do |f| %>
+    <h4><%= image_tag f.user.avatar_url(28) %> <%= f.post.title %> <%= f.post.comments.count %> Comments <%= f.post.votes.count %> Votes </h4>
+    <% end %>
 </div>
 
 <h2>Posts</h2>
-<%= render @user.posts %>
+<%= post_history(@user) %>
 
 <h2>Comments</h2>
-<%= render @user.comments %>
+<%= comment_history(@user) %>
