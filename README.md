@@ -1,24 +1,31 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# Sammit
+---
+Sammit is a Ruby on Rails replica of the popular internet website Reddit. The application was built to gain an understanding of how a Rails app is constructed.
+You can find the app on Heroku at: (https://pure-cliffs-33222.herokuapp.com)
+You can find the source code on GitHub at: (https://github.com/hamdans1/bloccit)
 
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://bloccit-hamdans1.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
+## Features
+---
+* Users can create a standard account with an email and password.
+* Posts and Comments can get up/down votes and are scoped according to their vote score and a time decay algorithm.
+* Users can favorite posts and receive email updates every time a comment or change is made to a post.
 
 
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+## Configuration
+---
+**Language and Framework:** Ruby/RoR
+**Ruby Version:** 2.3.0
+**Databse:** SQLite(Development), PostgreSQL(Production)
+**Gemfile AddOns:** 
+* BCrypt
+* SendGride
+* Bootstrap
+* Figaro
+* FactoryGirl
+* Shoulda
+**Run Sammit locally:**
+* Clone the repo
+* Create and migrate your database
+* Run `$ rails server`
+* Navigate to localhost:3000
